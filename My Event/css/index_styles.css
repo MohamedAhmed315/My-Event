@@ -1,0 +1,336 @@
+
+@font-face {
+  font-family: 'myfont1';
+  src: url('../fonts/arial.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'myfont1';
+  src: url('../fonts/arialbd.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'myfont1';
+  src: url('../fonts/arialbi.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'myfont1';
+  src: url('../fonts/ariali.ttf') format('truetype');
+  font-style: italic;
+}
+
+* {
+  font-family: 'myfont1';
+  
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: top 1s;
+  }
+
+/********************* header ***********************************/
+.logo {
+    width: 50%;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    background-color: black;
+    z-index: 999;
+    transition: top 1s;
+}
+
+.navscroll {
+  overflow-y: auto !important;
+  max-height: 200px !important;
+}
+
+.tickets {
+    border-radius: 20px;
+    width: fit-content;
+    vertical-align: middle;
+    background-color: #f82249;
+    border: 2px solid #f82249;
+    transition: all ease-in-out 0.3s;
+    margin-top: 1vh;
+    font-size: 14px;
+}
+
+.tickets:hover {
+    background: none;
+}
+
+.height {
+  height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#collapsibleNavbar {
+  font-size: 16px;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+/**************************************************************/
+ 
+
+
+/********************home section********************************/
+.home-section {
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.8), 
+        rgba(6, 12, 34, 0.8)
+      ), url("../images/intro-bg.jpg");
+    color: white;
+    width: 100%;
+    padding-top: 20vh;
+    text-align: center;
+    font-weight: bold;
+    background-attachment: fixed;
+}
+
+.home-motto {
+    font-size: 4vw;
+    margin-top: 1em;
+}
+
+.home-half-motto {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.video-button {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#f82249 50%, rgba(101, 111, 150, 0.2) 52%);
+    border-radius: 50%;
+    display: block;
+    color: white;
+    border: none;
+    margin: auto;
+}
+
+.video-button:hover {
+  animation-name: anime;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  background-color: #97031e;
+  color: white;
+}
+
+.video-button:focus {
+  outline: none;
+}
+
+/*video button animation */
+@keyframes anime {
+  0% {background-color: #d6697d; transform: rotate(0deg); -webkit-transform: rotate(0deg);}
+  10% {background-color: #d6697d; transform: rotate(36deg); -webkit-transform: rotate(36deg);}
+  20% {background-color: #d1546b; transform: rotate(72deg); -webkit-transform: rotate(72deg);}
+  30% {background-color: #ce586d; transform: rotate(108deg); -webkit-transform: rotate(108deg);}
+  40% {background-color: #ce586d; transform: rotate(144deg); -webkit-transform: rotate(144deg);}
+  50% {background-color: #cc2c49; transform: rotate(180deg); -webkit-transform: rotate(180deg);}
+  60% {background-color: #cc2c49; transform: rotate(216deg); -webkit-transform: rotate(216deg);}
+  70% {background-color: #a10d28; transform: rotate(252deg); -webkit-transform: rotate(252deg);}
+  80% {background-color: #a10d28; transform: rotate(288deg); -webkit-transform: rotate(288deg);}
+  90% {background-color: #97031e; transform: rotate(324deg); -webkit-transform: rotate(324deg);}
+  100% {background-color: #97031e; transform: rotate(360deg); -webkit-transform: rotate(360deg);}
+}
+
+.about-the-event-button {
+  border-radius: 20px;
+  width: fit-content;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 16px;
+  border: 2px solid #f82249;
+  transition: all ease-in-out 0.5s;
+  margin: 50px 0 8vh 0;
+  padding: 0 20px 0 20px;
+}
+
+.about-the-event-button:hover {
+  color: white;
+  background-color: #f82249;
+  transition: all ease-in-out 0.5s;
+}
+
+.about-the-event-button:focus {
+  outline: none;
+}
+
+#videoModal {
+  padding-top: 10vh;
+  background-color: none;
+}
+
+#modalbody {
+  background-color: black;
+  height: 70vh;
+}
+
+iframe {
+  height: 60vh;
+  width: 420px;
+  margin: auto;
+  display: block;
+}
+/* ********************************************************** */
+
+/* *********************about section************************ */
+
+.about-section {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.8), 
+    rgba(6, 12, 34, 0.5)
+  ), url("../images/about-bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  justify-content: left;
+  text-align: left;
+  color: white;
+  padding-top: 80px;
+}
+
+#about-heading1 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#about-heading2, #about-heading3 {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-bottom: 2em;
+}
+/***************************************************************/
+
+/* ********************speakers section*********************** */
+
+.event-speakers {
+  font-size: 2em;
+}
+
+#speakers {
+  padding-top: 80px;
+}
+
+#red_underscore {
+  border-bottom: solid 5px #f82249;
+  width: 3.5em;
+  text-align: center;
+  margin: auto;
+}
+
+.speakers_img {
+  width: 100%;
+}
+
+.speakers_grid {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.sp_img_container {
+  position: relative;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.sp_img_container .sp_img_text {
+  position: absolute;
+  z-index: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  height: match-parent;
+}
+
+.sp_img_text {
+  text-align: center;
+  line-height: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 92%;
+}
+
+.fa {
+  font-size: 18px;
+}
+
+.fa:hover, h4:hover {
+  color: #f82249;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.h5 {
+  color: rgb(180, 173, 173);
+  font-weight: lighter;
+}
+/***************************************************************/
+
+/*****************************shcedule section******************/
+
+#schedule {
+  padding-top: 80px;
+}
+
+.schedule-days {
+  background-color: #0e1b4d;
+  color: white;
+  width: 150px;
+  border-radius: 25px;
+  /* margin-bottom: 5px; */
+  /* margin-left: 5px;
+  margin-right: 5px; */
+}
+
+.schedule-days:hover {
+  color: white;
+}
+
+.schedule-days:active, .schedule-days:focus {
+  outline: 0 !important;
+  box-shadow: none;
+  background-color: #f82249;
+  color: white;
+}
+
+.schedule-days:target {
+  background-color: #f82249;
+}
+
+.days-container {
+  text-align: center;
+}
+
+.active2 {
+  background-color: #f82249;
+}
+
+.sch-table {
+  margin: auto;
+  display: grid;
+  padding-left: 30px;
+}
+
+/***************************************************************/
