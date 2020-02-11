@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap Libraries-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!------------------------------------------------------------------------------------------>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/index_styles.css">
+    <script src="js/scripts.js"></script>
+    <title>My Event</title>
+</head>
+
+<body>
+    <div class="container"> <!-- header section -->
+    <header id="header">
+            <nav class="navbar navbar-expand-xl navbar-dark sticky-top">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="Logo" class="logo">
+                </a>
+                <!-- collapse button -->
+                <button class="navbar-toggler toggleb" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse in navscroll" id="collapsibleNavbar">
+                <ul class="navbar-nav font-weight-bold">
+                    <li class="nav-item">
+                    <a class="nav-link active" onclick="window.location.href='#home';" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item" id="myTab">
+                    <a class="nav-link" onclick="window.location.href='#about';" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" onclick="window.location.href='#speakers';" href="#speakers">Speakers</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" onclick="window.location.href='#schedule';" href="#schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Venue</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link effect-underline" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white px-3 py-0 font-weight-normal tickets" href="#">Buy Tickets</a>
+                    </li>
+                </ul>
+            </div>
+             </nav>
+    </header>
+    </div>
+
+    <!-- --------------------------------------------------------------- -->
+    <div id="home" class="container-fluid home-section"> <!-- home section -->
+        <div class="container-fluid">
+            <p class="home-motto">THE ANNUAL<br>
+            <span style="color: #f82249;">MARKETING</span> CONFERENCE
+            
+            </p>
+            <p class="home-half-motto">10-12 December, Downtown Conference Center, New York</p>
+            
+        </div>
+
+        <button type="button" class="video-button" data-toggle="modal" data-target="#videoModal"><i class="fa fa-play"></i></button>
+
+        <!-- video modal -->
+        <div class="modal fade" id="videoModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                
+                <!-- Modal Header -->
+            <div class="modal-header" style="display: none;">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+                <!-- Modal body -->
+                <div class="modal-body" id="modalbody">
+                    <div class="video-container">
+                        <iframe id="videoiframe"
+                        src="https://www.youtube.com/embed/jDDaplaOz7Q?rel=0&autoplay=1&v=jDDaplaOz7Q" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+            <div class="modal-footer" style="display: none;">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+              </div>
+            </div>
+        </div>
+        <!-- end -->
+        
+        <button class="about-the-event-button" onclick="window.location.href='#about'">About The Event</button>
+        <br>
+    </div>
+
+    <!-- --------------------------------------------------------------- -->
+    <div id="about" class="container-fluid about-section" > <!-- about section -->
+            <div class="row">
+                <div class="col-sm-6 pb-5">
+                    <span id="about-heading1">About The Event</span><br/>
+                    Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.
+                </div>
+                <div class="col-sm-3 pb-5">
+                    <span id="about-heading2">WHERE</span><br/>
+                    Downtown Conference Center, New York
+                </div>
+                <div class="col-sm-3 pb-5">
+                    <span id="about-heading3">WHEN</span><br/>
+                    Monday to Wednesday
+                    10-12 December
+                </div>
+            </div>
+    </div>
+    
+    <!-- --------------------------------------------------------------- -->
+    <div id="speakers" class="container text-center" > <!-- speakers section-->
+        <p class="font-weight-bold text-dark event-speakers">EVENT SPEAKERS</p>
+        <p class="h5">Here are some of our speakers</p>
+        <p class="mb-5" id="red_underscore"></p>
+    </div>
+
+    <div class="container-fluid text-center speakers_grid"> <!-- speakers images -->
+        <div class="row">
+            <div class="col-lg sp_img_container">
+                <img class="speakers_img" src="images/speakers/1.jpg" alt="Brenden Legros">
+                <div class="sp_img_text">
+                    <h4>Brenden Legros</h4>
+                    <p>Quas alias incidunt</p>
+                    <p class="fa fa-facebook fa-lg" ></p> 
+                    <p class="fa fa-twitter fa-lg"></p> 
+                    <p class="fa fa-google-plus fa-lg"></p>
+                    <p class="fa fa-linkedin fa-lg"></p> 
+                </div>
+            </div>
+
+            <div class="col-lg sp_img_container">
+                <img class="speakers_img" src="images/speakers/2.jpg" alt="Hubert Hirthe">
+                <div class="sp_img_text">
+                    <h4>Hubert Hirthe</h4>
+                    <p>Consequuntur odio aut</p>
+                    <p class="fa fa-facebook fa-lg" ></p> 
+                    <p class="fa fa-twitter fa-lg"></p> 
+                    <p class="fa fa-google-plus fa-lg"></p>
+                    <p class="fa fa-linkedin fa-lg"></p> 
+                </div>
+            </div>
+
+            <div class="col-lg sp_img_container">
+                <img class="speakers_img" src="images/speakers/3.jpg" alt="Cole Emmerich">
+                <div class="sp_img_text">
+                    <h4>Cole Emmerich</h4>
+                    <p>Fugiat laborum et</p>
+                    <p class="fa fa-facebook fa-lg" ></p> 
+                    <p class="fa fa-twitter fa-lg"></p> 
+                    <p class="fa fa-google-plus fa-lg"></p>
+                    <p class="fa fa-linkedin fa-lg"></p> 
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg sp_img_container">
+                <img class="speakers_img" src="images/speakers/4.jpg" alt="Jack Christiansen">
+                <div class="sp_img_text">
+                    <h4>Jack Christiansen</h4>
+                    <p>Debitis iure vero</p>
+                    <p class="fa fa-facebook fa-lg" ></p> 
+                    <p class="fa fa-twitter fa-lg"></p> 
+                    <p class="fa fa-google-plus fa-lg"></p>
+                    <p class="fa fa-linkedin fa-lg"></p> 
+                </div>
+            </div>
+
+            <div class="col-lg sp_img_container">
+                <img class="speakers_img" src="images/speakers/5.jpg" alt="Alejandrin Littel">
+                <div class="sp_img_text">
+                    <h4>Alejandrin Littel</h4>
+                    <p>Qui molestiae natus</p>
+                    <p class="fa fa-facebook fa-lg" ></p> 
+                    <p class="fa fa-twitter fa-lg"></p> 
+                    <p class="fa fa-google-plus fa-lg"></p>
+                    <p class="fa fa-linkedin fa-lg"></p> 
+                </div>
+            </div>
+
+            <div class="col-lg sp_img_container">
+                <img class="speakers_img" src="images/speakers/6.jpg" alt="Willow Trantow">
+                <div class="sp_img_text">
+                    <h4>Willow Trantow</h4>
+                    <p>Non autem dicta</p>
+                    <p class="fa fa-facebook fa-lg" ></p> 
+                    <p class="fa fa-twitter fa-lg"></p> 
+                    <p class="fa fa-google-plus fa-lg"></p>
+                    <p class="fa fa-linkedin fa-lg"></p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- --------------------------------------------------------------- -->
+    <div id="schedule" class="container text-center" > <!-- schedule section-->
+        <p class="font-weight-bold text-dark event-speakers">EVENT SCHEDULE</p>
+        <p class="h5">Here is our event schedule</p>
+        <p class="mb-5" id="red_underscore"></p>
+    </div>
+
+    <div class="container w-70 days-container"> <!--Days -->
+
+        <div class="row" style="display: inline-flex;">
+        <div class="col-4">
+        <button id="day1button" class="btn schedule-days" onclick="clickday1();">Day 1</button>
+        </div>
+
+        <div class="col-4">
+        <button id="day2button" class="btn schedule-days" onclick="clickday2();">Day 2</button>
+        </div>
+
+        <div class="col-4">
+        <button id="day3button" class="btn schedule-days" onclick="clickday3();">Day 3</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-4" style="width: 80%;">
+        <div class="row">
+        <p class="h5 text-center text-secondary font-italic font-weight-normal" style="font-size: medium;">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius necessitatibus voluptatem quis labore perspiciatis quia.</p>
+        </div>
+    </div>
+    
+<div class="container sch-table">
+    <div id="day1">
+        <div class="row">
+            <div class="col-md-2">
+                <p>09:30 AM</p>
+            </div>
+            <div class="col-md-10">
+                Registration <br>
+Fugit voluptas iusto maiores temporibus autem numquam magnam.
+            </div>
+        </div>
+
+      </div>
+
+      <div id="day2" style="display: none;">
+        <p>day 2 day 2 day 2</p>
+      </div>
+
+      <div id="day3" style="display: none;">
+        <p>day 3 day 3 day 3</p>
+      </div>
+</div>    
+
+
+<hr><hr><hr><hr><hr>
+      Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.
+
+    Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in est ut optio sequi unde.
+
+    
+
+    
+
+ <script>//close the navbar when clicked outside
+     $(document).click(function (event) {
+            var clickover = $(event.target);
+            var $navbar = $(".navbar-collapse");               
+            var _opened = $navbar.hasClass("in");
+            if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+                $navbar.collapse('hide');
+            }
+        });
+ </script>
+
+</body>
+</html>

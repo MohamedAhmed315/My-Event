@@ -1,0 +1,13 @@
+v.9 updates
+
+
+
+----------------------------------------------------------------------------
+known issues:
+
+1- speakers images bottom info bar
+2- days button active status
+3- days button width
+4- 
+
+-----------------------------------------------------------------------------
