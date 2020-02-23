@@ -1,0 +1,14 @@
+v.15 updates
+
+
+
+----------------------------------------------------------------------------
+known issues:
+
+1- speakers images bottom info bar
+2- venue images display
+3- gallery error
+4- faq plus icon
+5- contact phone borders
+
+-----------------------------------------------------------------------------
