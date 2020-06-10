@@ -1,0 +1,15 @@
+v.20 updates
+- extra small screen layout fixed
+- 
+
+
+----------------------------------------------------------------------------
+known issues:
+
+1- speakers images bottom info bar
+2- 
+3- contact phone borders
+4- 
+5- 
+
+-----------------------------------------------------------------------------
